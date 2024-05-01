@@ -8,13 +8,13 @@
 // Your function should be an arrow function (not a function declaration) and be contained
 // within a single line
 
-// REPLACE THIS WITH YOUR CODE
+const isGreaterThanTwenty = (param1) => param1 > 20;
 
 /// /////// PROBLEM 2 //////////
 
 // Create a one line arrow function called seven that will return the number 7
 
-// REPLACE THIS WITH YOUR CODE
+const seven = () => 7;
 
 /// /////// PROBLEM 3 //////////
 
@@ -27,19 +27,19 @@
 //   return num1 + num2;
 // }
 
-// REPLACE THIS WITH YOUR CODE
+const addNums =(param1, param2) => param1 + param2
 
 // function subtractNums(num1, num2) {
 //   return num1 - num2;
 // }
 
-// REPLACE THIS WITH YOUR CODE
+const subtractNums = (param1, param2) => param1 - param2
 
 // function double(num) {
 //   return num * 2;
 // }
 
-// REPLACE THIS WITH YOUR CODE
+const double = (param) => param * 2;
 
 /// /////// PROBLEM 4 //////////
 
@@ -51,7 +51,10 @@
 // Your function should be an arrow function (not a function declaration) and it should
 // contain an explicit return statement.
 
-// REPLACE THIS WITH YOUR CODE
+const gemInfo = (gemType, gemSize, gemWeight) => {
+  console.log ({gemType}, {gemSize}, {gemWeight});
+  return {gemType, gemSize, gemWeight}
+}
 
 /// /////// PROBLEM 5 //////////
 
@@ -209,6 +212,7 @@ const monstersInYourPocket = [
 */
 
 //Code Here
+// uses math filter reduce
 let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
 /// /////// PROBLEM 13 //////////
