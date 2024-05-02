@@ -228,9 +228,17 @@ const monstersInYourPocket = [
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-//Code Here
+const totalCP = 0
+const allowedMons = [];
+if (monstersInYourPocket.startsWith('W')) {
+  (allowedMons.shift())
+}
+monstersInYourPocket.forEach((allowedMons) => (totalCP += currentMons.CP)) 
+    allowedMons.push({monster: currentMons.monster.toLowerCase(), CP: currentMons.CP})
+  
+
 // uses math filter reduce
-let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter((monster) => monster.CP > 200);
 
 /// /////// PROBLEM 13 //////////
 
@@ -246,4 +254,7 @@ let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here 
 //
 // Make sure to use arrow functions combined with the map method.
 
-// REPLACE THIS WITH YOUR CODE
+const getAges = (people) => {
+  return people.map((person) => person.age)
+}
+
