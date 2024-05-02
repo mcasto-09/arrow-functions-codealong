@@ -186,7 +186,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 //Code Here
-let totalPopulation; //  = populations.reduce(/* Provide Your Callback Here */)
+let totalPopulation  = populations.reduce((total, population) => total + population);
 
 ////////// PROBLEM 12 //////////
 // extrra credit : add all CP for each creature, filter out all that start with W, and lowercase all names
