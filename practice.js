@@ -117,7 +117,9 @@ function drinkAlcohol() {
 
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Create function canDrink here
+const canDrink = (age, under21CB, over21CB) => {
+  return age < 21 ? under21CB() : over21CB()
+}
 
 /// /////// PROBLEM 8 //////////
 
@@ -127,7 +129,16 @@ function drinkAlcohol() {
 // Write a function called math that takes in two numbers, and a callback 'operator' as parameters.
 // This function should return the result of invoking an operator with the appropriate arguments.
 
-//Code here
+const add = (num1, num2) => {
+  return num1 + num2
+}
+const multiply = (num1, num2) => {
+  return num1 * num2
+}
+const math = (num1, num2, operator) => {
+  return operator(num1, num2);
+}
+console.log(math(3,4,add));
 
 ////////// PROBLEM 9 //////////
 
