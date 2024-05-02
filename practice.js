@@ -63,7 +63,9 @@ const gemInfo = (gemType, gemSize, gemWeight) => {
 // To see it working, invoke outerFn at the bottom, passing in innerFn as the callback.
 // You should now see "The innerFn is a callback!" in the console.
 
-// Create function here
+function outerFn(callback){
+  return callback();
+}
 
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
 function innerFn() {
@@ -71,7 +73,7 @@ function innerFn() {
 }
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Invoke function here
+console.log(outerFn(innerFn))
 
 /// /////// PROBLEM 6 //////////
 
@@ -79,7 +81,9 @@ function innerFn() {
 // The fullName function should return the callback, passing in firstName and lastName as parameters.
 // To test, invoke fullName with your first name, last name and the welcomeMessage function as arguments.
 
-// Create function fullName here
+const fullName = (first, last, callback) => {
+  return callback (first, last);
+};
 
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
 function welcomeMessage(first, last) {
@@ -87,7 +91,7 @@ function welcomeMessage(first, last) {
 }
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Invoke fullName below
+console.log(fullName('Mary', 'Castorani', welcomeMessage));
 
 /// /////// PROBLEM 7 //////////
 
